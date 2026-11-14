@@ -35,7 +35,6 @@
     }
     a:hover, button:hover { background: #d6bd83; color: #111; transform: translateY(-2px); }
     footer { margin-top: 38px; color: #625f58; font-size: 11px; letter-spacing: .18em; }
-    #notice { min-height: 18px; margin-top: 14px; color: #d6bd83; font-size: 12px; }
   </style>
 </head>
 <body>
@@ -46,21 +45,9 @@
     <p>Resmî profil sayfası. YouTube kanalımı ziyaret edebilir veya Discord üzerinden ulaşabilirsin.</p>
     <div class="links">
       <a href="https://www.youtube.com/@Kurias0" target="_blank" rel="noopener noreferrer">YouTube Kanalı</a>
-      <button type="button" id="discord">Discord ID'yi Kopyala</button>
+      <a href="https://discord.com/users/283382061534806016" target="_blank" rel="noopener noreferrer">Discord Profilim</a>
     </div>
-    <div id="notice" aria-live="polite"></div>
     <footer>© 2026 KURIAS0</footer>
   </main>
-  <script>
-    document.getElementById('discord').addEventListener('click', async () => {
-      const notice = document.getElementById('notice');
-      try {
-        await navigator.clipboard.writeText('283382061534806016');
-        notice.textContent = 'Discord ID kopyalandı.';
-      } catch {
-        notice.textContent = 'Discord ID: 283382061534806016';
-      }
-    });
-  </script>
 </body>
 </html>
